@@ -1,0 +1,98 @@
+/* Estiliza o corpo da página */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Fonte com estilo militar */
+    margin: 0;
+    padding: 0;
+    background-color: #2d3e3f; /* Fundo verde escuro, inspirado em uniformes militares */
+    color: #e6e6e6; /* Texto em cinza claro para contraste */
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background-color: #4b5320; /* Verde oliva escuro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #8b4513; /* Barra marrom, remetendo ao ambiente militar */
+}
+
+/* Estiliza a navegação */
+nav ul {
+    list-style-type: none; /* Remove os marcadores das listas */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Exibe os itens em linha, mas com padding */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Texto em negrito */
+    padding: 10px 20px;
+    border: 2px solid #fff; /* Bordas brancas, dando um visual robusto */
+    background-color: #4b5320; /* Verde oliva escuro, mantendo a paleta */
+    transition: background-color 0.3s; /* Suave transição de cor ao passar o mouse */
+}
+
+nav ul li a:hover {
+    background-color: #8b4513; /* Muda para marrom ao passar o mouse */
+}
+
+/* Estiliza o conteúdo principal */
+main {
+    padding: 20px;
+    background-color: #3e4e50; /* Cinza esverdeado, mantendo a estética militar */
+    margin: 20px;
+    border: 2px solid #8b4513; /* Bordas marrons, mantendo a temática */
+    border-radius: 10px; /* Canto levemente arredondado */
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: #4b5320; /* Verde oliva escuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #8b4513; /* Barra marrom no topo do rodapé */
+}
+
+/* Media Queries para Responsividade */
+
+/* Para dispositivos com largura de tela até 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Exibe os itens de navegação em linhas separadas */
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Reduz o tamanho do título */
+    }
+}
+
+/* Para dispositivos com largura de tela até 480px (celulares) */
+@media (max-width: 480px) {
+    nav ul li {
+        margin: 8px 0; /* Reduz o espaçamento entre os itens de navegação */
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.2em; /* Reduz ainda mais o tamanho do título */
+    }
+}
